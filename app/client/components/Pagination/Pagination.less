@@ -1,0 +1,23 @@
+@Gray: #DDD;
+.pages-list {
+  text-align: center;
+  .active {
+    background-color: @Gray;
+  }
+  span {
+    border:1px solid black;
+    padding:6px 12px;
+    @media (max-width: 768px) {
+      padding:4px 8px;
+      font-size: 11px;
+    }
+    &:hover {
+      background-color: @Gray;
+      cursor:pointer;
+    }
+    margin:2px;
+    border-radius: 2px;
+  }
+  margin-top:25px;
+  height:40px;
+}

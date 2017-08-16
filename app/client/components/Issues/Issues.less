@@ -1,0 +1,83 @@
+@Smull_white : #999;
+@NineWhite : #f5f5f5;
+@DarkGray : #444;
+@Gray : #777;
+.issues-main {
+  width:100%;
+  margin:auto;
+  text-align: left;
+  opacity:0;
+  transition: 1s ease;
+}
+.visible {
+  opacity: 1;
+}
+.issue-title {
+  font-weight: bold;
+  font-size:14px;
+  border-bottom: 1px solid @Smull_white;
+  @media (max-width: 768px) {
+    font-size: 11px;
+  }
+  a {
+    outline:none;
+    text-decoration: none;
+    color: @DarkGray;
+  }
+  &:hover {
+    color: @Gray;
+  }
+}
+
+
+
+.issue-author {
+  padding-top: 5px;
+  font-size: 12px;
+  a {
+    text-decoration: none;
+    color:black;
+    vertical-align: middle;
+  }
+  img {
+    vertical-align: middle;
+  }
+  @media (max-width: 768px) {
+    font-size: 8px;
+  }
+  span {
+    padding-left: 5px;
+    color:@Gray;
+    &:hover {
+      color:@Smull_white;
+    }
+  }
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    tr {
+      &:hover {background-color: @NineWhite}
+    }
+    td {
+      text-align: left;
+    }
+    th, td {
+        padding: 8px;
+        min-width: 100px;
+        cursor: pointer;
+        border-bottom: 1px solid @DarkGray;
+        @media (max-width: 768px) {
+          min-width: 75px;
+          font-size: 11px;
+        }
+    }
+      th {
+      text-align: center;
+      background-color: #333;
+      color: white;
+    }
+}
+
+
+tr:nth-child(even){background-color: #fAfAfA}

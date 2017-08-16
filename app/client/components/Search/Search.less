@@ -1,0 +1,42 @@
+@Gray: #CCC;
+
+.search-main {
+  text-align: center;
+  margin:auto;
+  width:100%;
+  input[type=text] {
+    width:100%;
+    border:2px solid white;
+    border-bottom:2px solid @Gray;
+    transition: .5s ease;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    outline:none;
+    &:focus {
+      border:2px solid @Gray;
+      border-radius: 5px 0 0 5px;
+    }
+  }
+  button {
+    width:100px;
+    margin-left: -102px;
+    padding: 12px;
+
+    outline:none;
+    background-color: white;
+    border:0;
+    cursor:pointer;
+    &:hover {
+      background-color: @Gray;
+    }
+    &:active {
+      background-color: @Gray;
+    }
+
+  }
+
+}
+.search {
+  text-align: center;
+}

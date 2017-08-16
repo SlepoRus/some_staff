@@ -1,0 +1,34 @@
+.dropdown {
+  width:598px;
+  max-height:200px;
+  overflow:auto;
+  border:1px solid #BBB;
+  border-radius:0 0 5px 5px ;
+  margin:auto;
+  margin-top:-10px;
+  div {
+    text-align: left;
+    .dropdown-item {
+      transition: .7 ease;
+      background-color:white;
+      cursor:pointer;
+      a {
+        text-decoration: none;
+        color:black;
+        padding:10px 20px;
+        display:block;
+      }
+      img {
+        padding-top:0px;
+        vertical-align: middle;
+      }
+      span {
+        vertical-align: middle;
+        padding-left: 10px;
+      }
+      &:hover {
+        background-color:#EEF;
+      }
+    }
+  }
+}

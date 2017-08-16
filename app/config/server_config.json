@@ -1,0 +1,5 @@
+{
+    "PORT": 8080,
+    "dev_assets": "http://localhost:8050",
+    "prod_assets": ""
+}

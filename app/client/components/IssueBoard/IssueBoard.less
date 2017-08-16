@@ -1,0 +1,70 @@
+@Success : #009900;
+@Warning : #FF4500;
+.board_information( @color ) {
+  background-color: @color;
+  color:white;
+}
+.board-main {
+  margin-top: 20px;
+  text-align: left;
+  border:1px solid black;
+  border-radius: 2px;
+
+  .board-head {
+    min-height:40px;
+    background-color: #EEE;
+    span {
+      padding-right: 5px;
+      vertical-align: top;
+    }
+
+    div {
+      float:right;
+      @media (max-width: 768px) {
+        margin:5px;
+        float:none;
+      }
+      a {
+        text-decoration: none;
+        color:black;
+        vertical-align: middle;
+      }
+      img {
+        vertical-align: middle;
+      }
+      span {
+        vertical-align: middle;
+        padding-left: 5px;
+        color:#777;
+        &:hover {
+          color:#999;
+        }
+      }
+    }
+    .board-title {
+      display:inline-block;
+      max-width: 70%;
+      float:none;
+    }
+    padding:10px;
+  }
+  .board-body {
+    padding:20px;
+    text-align: justify;
+    word-wrap: break-word;
+    div {
+      width:100px;
+      text-align: center;
+      border: 1px solid #CCC;
+      margin-top:20px;
+      padding:6px;
+      border-radius: 4px;
+    }
+    .board-open {
+      .board_information(@Success)
+    }
+    .board-closed {
+      .board_information(@Warning)
+    }
+  }
+}
